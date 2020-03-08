@@ -42,13 +42,25 @@ or
 
 3. move .mkv file to FFSUKI directory
 
-4. Open FFSUKI
+4. if your file name contain space or symbol. rename it first
+
+**Example**
+
+❌ [Fansub]Citrus-01[FullHD].mkv
+
+❌ Citrus 01.mkv
+
+✔️ Fansub-Citrus-01-FullHD.mkv
+
+✔️ Citrus-01.mkv
+
+5. Open FFSUKI
 
 >bash ffsuki.sh
 
-5. choose resolution, quality, etc
+6. choose resolution, quality, etc
 
-6. wait..... until finish
+7. wait..... until finish
 
 Thank you for using FFSUKI 😊
 
