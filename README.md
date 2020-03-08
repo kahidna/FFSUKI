@@ -69,7 +69,7 @@ Thank you for using FFSUKI 😊
 
 ## Video Format
 
-❌ x264
+✔️ x264
 
 ❌ x265
 
@@ -79,7 +79,7 @@ Thank you for using FFSUKI 😊
 
 ## Resolution
 
-❌ nHD (640x360)
+✔️ nHD (640x360)
 
 ❌ qHD (960x540)
 
