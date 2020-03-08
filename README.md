@@ -36,19 +36,7 @@ or
 
 # How To Use?
 
-1. if your file name contain space or symbol. rename it first
-
-### Example
-
-❌ [Fansub]Citrus-01[FullHD].mkv
-
-❌ Citrus 01.mkv
-
-✔️ Citrus-01.mkv
-
-✔️ Fansub-Citrus-01-FullHD.mkv
-
-2. git clone FFSUKI
+1. git clone FFSUKI
 
 >$ git clone https://github.com/sekaidotid/FFSUKI.git
 
@@ -64,7 +52,41 @@ or
 
 Thank you for using FFSUKI 😊
 
+# Features
+
+> ✔️ = Availabe
+> ❌ = Not Available (On Development)
+
+## Video Format
+
+❌ x264
+
+❌ x265
+
+❌ VP9
+
+❌ AV1
+
+## Resolution
+
+❌ nHD (640x360)
+
+❌ qHD (960x540)
+
+❌ HD (1280x720)
+
+❌ FHD (1920x1080)
+  
+❌ 2K DCI (2048x1080)
+
+❌ WQHD (2560x1440)
+
+❌ UHD (3840x2160)
+
+❌ 4k DCI (4096x2160)
 
 # Credits
+
+Copyright SEKAI.ID
 
 Thanks to FFmpeg for make very awesome video converter software (https://ffmpeg.org/)
