@@ -50,11 +50,9 @@ or
 
 ❌ Citrus 01.mkv
 
-✔️ Fansub-Citrus-01-FullHD.mkv
-
 ✔️ Citrus-01.mkv
 
-5. Open FFSUKI
+1. Open FFSUKI
 
 >bash ffsuki.sh
 
