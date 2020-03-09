@@ -71,7 +71,7 @@ Thank you for using FFSUKI 😊
 
 ✔️ x264
 
-❌ x265
+✔️ x265
 
 ❌ VP9
 
