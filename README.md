@@ -81,19 +81,19 @@ Thank you for using FFSUKI 😊
 
 ✔️ nHD (640x360)
 
-❌ qHD (960x540)
+✔️ qHD (960x540)
 
-❌ HD (1280x720)
+✔️ HD (1280x720)
 
-❌ FHD (1920x1080)
+✔️ FHD (1920x1080)
   
-❌ 2K DCI (2048x1080)
+✔️ 2K DCI (2048x1080)
 
-❌ WQHD (2560x1440)
+✔️ WQHD (2560x1440)
 
-❌ UHD (3840x2160)
+✔️ UHD (3840x2160)
 
-❌ 4k DCI (4096x2160)
+✔️ 4k DCI (4096x2160)
 
 # Credits
 
