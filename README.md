@@ -42,7 +42,7 @@ or
 
 3. move .mkv file to FFSUKI directory
 
-4. if your file name contain space or symbol. rename it first
+4. if your file name contain space or symbol, rename it
 
 **Example**
 
@@ -52,9 +52,9 @@ or
 
 ✔️ Citrus-01.mkv
 
-1. Open FFSUKI
+5. Open FFSUKI
 
->bash ffsuki.sh
+>$ bash ffsuki.sh
 
 6. choose resolution, quality, etc
 
