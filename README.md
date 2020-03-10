@@ -73,7 +73,7 @@ Thank you for using FFSUKI 😊
 
 ✔️ x265
 
-❌ VP9
+✔️ VP9
 
 ❌ AV1
 
