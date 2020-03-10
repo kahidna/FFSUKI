@@ -58,7 +58,7 @@ if [[ "$vid" == "1" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2250k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1125k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x264]-[${crc^^}].mp4;
     done
@@ -70,7 +70,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1125k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 562k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x264]-[${crc^^}].mp4;
     done
@@ -82,7 +82,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 562k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 281k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x264]-[${crc^^}].mp4;
     done
@@ -94,7 +94,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 281k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 112k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x264]-[${crc^^}].mp4;
     done
@@ -109,7 +109,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 5062k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2531k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x264]-[${crc^^}].mp4;
     done
@@ -121,7 +121,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2531k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1265k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x264]-[${crc^^}].mp4;
     done
@@ -133,7 +133,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1265k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 632k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x264]-[${crc^^}].mp4;
     done
@@ -145,7 +145,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 632k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 253k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x264]-[${crc^^}].mp4;
     done
@@ -160,7 +160,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 9000k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 4500k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x264]-[${crc^^}].mp4;
     done
@@ -172,7 +172,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 14500k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2250k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x264]-[${crc^^}].mp4;
     done
@@ -184,7 +184,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2250k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1125k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x264]-[${crc^^}].mp4;
     done
@@ -196,7 +196,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1125k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 450k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x264]-[${crc^^}].mp4;
     done
@@ -211,7 +211,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 20250k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10125k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x264]-[${crc^^}].mp4;
     done
@@ -223,7 +223,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10125k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 5062k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x264]-[${crc^^}].mp4;
     done
@@ -235,7 +235,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 5062k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2531k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x264]-[${crc^^}].mp4;
     done
@@ -247,7 +247,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2531k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1012k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x264]-[${crc^^}].mp4;
     done
@@ -262,7 +262,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 20250k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10800k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -274,7 +274,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10125k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 5400k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -286,7 +286,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 5062k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2700k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -298,7 +298,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 2531k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1080k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -313,7 +313,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 36000k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 14250k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x264]-[${crc^^}].mp4;
     done
@@ -325,7 +325,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 18000k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 7125k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x264]-[${crc^^}].mp4;
     done
@@ -337,7 +337,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 9000k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 3562k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x264]-[${crc^^}].mp4;
     done
@@ -349,7 +349,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 4500k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 1425k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x264]-[${crc^^}].mp4;
     done
@@ -364,7 +364,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 81000k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 40500k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x264]-[${crc^^}].mp4;
     done
@@ -376,7 +376,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 40500k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 20250k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x264]-[${crc^^}].mp4;
     done
@@ -388,7 +388,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 20250k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10125k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x264]-[${crc^^}].mp4;
     done
@@ -400,7 +400,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10125k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 4050k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x264]-[${crc^^}].mp4;
     done
@@ -415,7 +415,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 86400k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 43200k -c:a aac -b:a 384k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -427,7 +427,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 43200k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 21600k -c:a aac -b:a 256k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -439,7 +439,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 21600k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10800k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -451,7 +451,7 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 10800k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx264 -preset veryslow -b:v 4320k -c:a aac -b:a 128k ffsuki-x264-${i%.*}.mp4;
     crc=`crc32 ffsuki-x264-${i%.*}.mp4`;
     mv ffsuki-x264-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x264]-[${crc^^}].mp4;
     done
@@ -467,7 +467,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2250k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1125k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x265]-[${crc^^}].mp4;
     done
@@ -479,7 +479,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1125k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 562k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x265]-[${crc^^}].mp4;
     done
@@ -491,7 +491,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 562k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 281k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x265]-[${crc^^}].mp4;
     done
@@ -503,7 +503,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 281k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 112k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[nHD]-[x265]-[${crc^^}].mp4;
     done
@@ -518,7 +518,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 5062k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2531k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x265]-[${crc^^}].mp4;
     done
@@ -530,7 +530,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2531k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1265k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x265]-[${crc^^}].mp4;
     done
@@ -542,7 +542,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1265k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 632k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x265]-[${crc^^}].mp4;
     done
@@ -554,7 +554,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 632k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 253k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[qHD]-[x265]-[${crc^^}].mp4;
     done
@@ -569,7 +569,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 9000k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 4500k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x265]-[${crc^^}].mp4;
     done
@@ -581,7 +581,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 14500k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2250k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x265]-[${crc^^}].mp4;
     done
@@ -593,7 +593,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2250k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1125k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x265]-[${crc^^}].mp4;
     done
@@ -605,7 +605,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1125k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 450k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[HD]-[x265]-[${crc^^}].mp4;
     done
@@ -620,7 +620,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 20250k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10125k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x265]-[${crc^^}].mp4;
     done
@@ -632,7 +632,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10125k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 5062k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x265]-[${crc^^}].mp4;
     done
@@ -644,7 +644,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 5062k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2531k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x265]-[${crc^^}].mp4;
     done
@@ -656,7 +656,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2531k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1012k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[FHD]-[x265]-[${crc^^}].mp4;
     done
@@ -671,7 +671,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 20250k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10800k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x265]-[${crc^^}].mp4;
     done
@@ -683,7 +683,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10125k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 5400k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x265]-[${crc^^}].mp4;
     done
@@ -695,7 +695,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 5062k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2700k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x265]-[${crc^^}].mp4;
     done
@@ -707,7 +707,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 2531k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1080k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[2K-DCI]-[x265]-[${crc^^}].mp4;
     done
@@ -722,7 +722,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 36000k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 14250k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x265]-[${crc^^}].mp4;
     done
@@ -734,7 +734,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 18000k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 7125k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x265]-[${crc^^}].mp4;
     done
@@ -746,7 +746,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 9000k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 3562k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x265]-[${crc^^}].mp4;
     done
@@ -758,7 +758,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 4500k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 1425k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[WQHD]-[x265]-[${crc^^}].mp4;
     done
@@ -773,7 +773,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 81000k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 40500k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x265]-[${crc^^}].mp4;
     done
@@ -785,7 +785,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 40500k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 20250k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x265]-[${crc^^}].mp4;
     done
@@ -797,7 +797,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 20250k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10125k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x265]-[${crc^^}].mp4;
     done
@@ -809,7 +809,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10125k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 4050k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[UHD]-[x265]-[${crc^^}].mp4;
     done
@@ -824,7 +824,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "1" ]]; then
     echo "Quality      : High Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 86400k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 43200k -c:a aac -b:a 384k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x265]-[${crc^^}].mp4;
     done
@@ -836,7 +836,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "2" ]]; then
     echo "Quality      : Medium Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 43200k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 21600k -c:a aac -b:a 256k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x265]-[${crc^^}].mp4;
     done
@@ -848,7 +848,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "3" ]]; then
     echo "Quality      : Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 21600k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10800k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x265]-[${crc^^}].mp4;
     done
@@ -860,7 +860,7 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "4" ]]; then
     echo "Quality      : Very Low Quality"
 
     for i in *.mkv;
-    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 10800k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libx265 -preset veryslow -b:v 4320k -c:a aac -b:a 128k ffsuki-x265-${i%.*}.mp4;
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x265]-[${crc^^}].mp4;
     done
