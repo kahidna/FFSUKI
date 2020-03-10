@@ -7,7 +7,7 @@ echo "FF         FF          SSSSS      UUUUU     KK  KK    IIIII "
 echo ""
 echo "Make Hardsub Its Easy!"
 echo "https://github.com/sekaidotid/FFSUKI"
-echo "Version : 0.2"
+echo "Version : 0.3"
 echo ""
 echo "Copyright SEKAI.ID (https://sekai.id)"
 echo ""
@@ -458,6 +458,9 @@ elif [[ "$vid" == "1" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "4" ]]; then
 
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------
+
 # x265
 # nHD (640x360)
 elif [[ "$vid" == "2" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "1" ]]; then
@@ -864,6 +867,423 @@ elif [[ "$vid" == "2" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "4" ]]; then
     crc=`crc32 ffsuki-x265-${i%.*}.mp4`;
     mv ffsuki-x265-${i%.*}.mp4 [${fansub^^}]-${i%.*}-[4k-DCI]-[x265]-[${crc^^}].mp4;
     done
+
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------
+
+# VP9
+# nHD (640x360)
+elif [[ "$vid" == "3" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : nHD (640x360)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 1125k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[nHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : nHD (640x360)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 562k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[nHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : nHD (640x360)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 281k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[nHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "1" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : nHD (640x360)"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=640:360,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 112k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[nHD]-[VP9]-[${crc^^}].webm;
+    done
+
+# VP9
+# qHD (960x540)
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : qHD (960x540)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 2531k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[qHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : qHD (960x540)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 1265k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[qHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : qHD (960x540)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 632k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[qHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "2" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : qHD (960x540)"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=960:540,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 253k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[qHD]-[VP9]-[${crc^^}].webm;
+    done
+
+# VP9
+# HD (1280x720)
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : HD (1280x720)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 4500k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[HD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : HD (1280x720)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 2250k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[HD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : HD (1280x720)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 1125k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[HD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "3" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : HD (1280x720)"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1280:720,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 450k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[HD]-[VP9]-[${crc^^}].webm;
+    done
+
+# VP9
+# FHD (1920x1080)
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : FHD (1920x1080)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 10125k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[FHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : FHD (1920x1080)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 5062k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[FHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : FHD (1920x1080)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 2531k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[FHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "4" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : FHD (1920x1080)"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=1920:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 1012k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[FHD]-[VP9]-[${crc^^}].webm;
+    done
+
+# VP9
+# 2K DCI (2048x1080)
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 2K DCI (2048x1080)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 10800k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[2K-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 2K DCI (2048x1080)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 5400k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[2K-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 2K DCI (2048x1080)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 2700k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[2K-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "5" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 2K DCI (2048x1080))"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2048:1080,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 1080k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[2K-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+# VP9
+# WQHD (2560x1440)
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : WQHD (2560x1440)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 14250k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[WQHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : WQHD (2560x1440)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 7125k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[WQHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : WQHD (2560x1440)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 3562k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[WQHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "6" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : WQHD (2560x1440)"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=2560:1440,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 1425k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[WQHD]-[VP9]-[${crc^^}].webm;
+    done
+
+# VP9
+# UHD (3840x2160)
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : UHD (3840x2160)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 40500k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[UHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : UHD (3840x2160)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 20250k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[UHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : UHD (3840x2160)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 10125k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[UHD]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "7" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : UHD (3840x2160)"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=3840:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 4050k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[UHD]-[VP9]-[${crc^^}].webm;
+    done
+
+# VP9
+# 4k DCI (4096x2160)
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "1" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 4k DCI (4096x2160)"
+    echo "Quality      : High Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 43200k -c:a libopus -b:a 384k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[4k-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "2" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 4k DCI (4096x2160)"
+    echo "Quality      : Medium Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 21600k -c:a libopus -b:a 256k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[4k-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "3" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 4k DCI (4096x2160)"
+    echo "Quality      : Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 10800k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[4k-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+elif [[ "$vid" == "3" ]] && [[ "$res" == "8" ]] && [[ "$qua" == "4" ]]; then
+
+    echo "Video Format : VP9"
+    echo "Resolution   : 4k DCI (4096x2160)"
+    echo "Quality      : Very Low Quality"
+
+    for i in *.mkv;
+    do ffmpeg -i $i -filter_complex "scale=4096:2160,subtitles='$i'" -c:v libvpx-vp9 -deadline best -b:v 4320k -c:a libopus -b:a 128k ffsuki-VP9-${i%.*}.webm;
+    crc=`crc32 ffsuki-VP9-${i%.*}.webm`;
+    mv ffsuki-VP9-${i%.*}.webm [${fansub^^}]-${i%.*}-[4k-DCI]-[VP9]-[${crc^^}].webm;
+    done
+
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------
+# ----------------------------------------------------------------
 
 # option not available
 else
