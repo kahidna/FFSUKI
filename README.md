@@ -2,15 +2,19 @@
 
 Make Hardsub It's Easy!
 
-# How To Install?
+# What Is FFSUKI
+
+
+
+# How To Install FFSUKI?
 
 ## Installing Dependencies
 
-- if you use Debian Based Linux (Debian, Ubuntu, etc)
+### if you use Debian Based Linux (Debian, Ubuntu, etc)
 
 >$ sudo apt install ffmpeg libarchive-zip-perl
 
-- if you use RedHat Based Linux (RHEL, Fedora, Centos, etc)
+### if you use RedHat Based Linux (RHEL, Fedora, Centos, etc)
 
 >$ sudo dnf install ffmpeg libarchive-zip-perl
 
@@ -18,7 +22,7 @@ or
 
 >$ sudo yum install ffmpeg libarchive-zip-perl
 
-- if you use Windows
+### if you use Windows
 
 1. Go to Control Panel > Programs and Features > Turn Windows features on or off
 
@@ -34,15 +38,15 @@ or
 
 7. following a Installing Dependencies in Linux
 
-# How To Use?
-
-1. git clone FFSUKI
+## Git Clone FFSUKI
 
 >$ git clone https://github.com/sekaidotid/FFSUKI.git
 
-3. move .mkv file to FFSUKI directory
+# How To Use FFSUKI?
 
-4. if your file name contain space or symbol, rename it
+1. move .mkv & .ass file to FFSUKI directory
+
+2. if your file name contain space or symbol, rename it
 
 **Example**
 
@@ -50,15 +54,19 @@ or
 
 ❌ Citrus 01.mkv
 
+❌ Citrus 01.ass
+
 ✔️ Citrus-01.mkv
 
-5. Open FFSUKI
+✔️ Citrus-01.ass
+
+3. Open FFSUKI
 
 >$ bash ffsuki.sh
 
-6. choose resolution, quality, etc
+4. choose resolution, quality, etc.
 
-7. wait..... until finish
+5. wait..... until finish
 
 Thank you for using FFSUKI 😊
 
