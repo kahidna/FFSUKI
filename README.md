@@ -4,7 +4,11 @@ Make Hardsub It's Easy!
 
 # What Is FFSUKI
 
+FFSUKI is an FFMPEG interface to make it easier for you to make hardsub.
 
+If you have a difficulty operating FFMPEG, You don't need to learn the FFMPEG command, because FFSUKI makes it easy for you!.
+
+just as easy as choosing 1, 2, 3, ...
 
 # How To Install FFSUKI?
 
